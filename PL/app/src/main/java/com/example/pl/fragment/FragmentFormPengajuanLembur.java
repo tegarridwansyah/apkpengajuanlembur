@@ -33,6 +33,7 @@ import com.example.pl.model.DataDivisiModel;
 import com.example.pl.model.DataPMModel;
 import com.example.pl.model.DataPegawaiModel;
 import com.example.pl.model.DataPengajuanModel;
+import com.example.pl.model.PushNotifModel;
 import com.example.pl.model.SearchIDPMDIVModel;
 import com.example.pl.retrofit.RetrofitClient;
 import com.example.pl.retrofit.RetrofitInterface;
@@ -514,6 +515,20 @@ public class FragmentFormPengajuanLembur extends Fragment {
                                                                                             dialog.dismiss();
                                                                                         }
                                                                                     }).show();
+
+                                                                            RetrofitInterface anInterface = RetrofitClient.getClient().create(RetrofitInterface.class);
+                                                                            Call<PushNotifModel> call2 = anInterface.sendPush("send", "Pemberitahuan", "Pengajuan Lembur Masuk", "TTX002");
+                                                                            call2.enqueue(new Callback<PushNotifModel>() {
+                                                                                @Override
+                                                                                public void onResponse(Call<PushNotifModel> call, Response<PushNotifModel> response) {
+                                                                                    Log.e("FROM :", "YAYAYA");
+                                                                                }
+
+                                                                                @Override
+                                                                                public void onFailure(Call<PushNotifModel> call, Throwable t) {
+
+                                                                                }
+                                                                            });
                                                                         } else {
                                                                             progressDialog.dismiss();
                                                                             new MaterialAlertDialogBuilder(getContext(), R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog)

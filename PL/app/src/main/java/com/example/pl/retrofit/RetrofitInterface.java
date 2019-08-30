@@ -229,4 +229,14 @@ public interface RetrofitInterface {
             @Field("reg_device_id") String reg_device_id,
             @Field("nip") String nip
     );
+
+    @FormUrlEncoded
+    @Headers("Content-Type: application/x-www-form-urlencoded")
+    @POST("ControllerPushNotif.php")
+    Call<PushNotifModel> sendPush(
+            @Field("action") String action,
+            @Field("title") String title,
+            @Field("message") String message,
+            @Field("nip") String nip
+    );
 }

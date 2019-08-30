@@ -140,7 +140,14 @@ public class ActivityHome extends AppCompatActivity {
                 } else if(intent.getAction().equals(Config.PUSH_NOTIFICATION)){
                     //new push notif is received
                     String message = intent.getStringExtra("message");
-                    Toast.makeText(getApplicationContext(), "Push Notification : " + message, Toast.LENGTH_SHORT).show();
+                    new MaterialAlertDialogBuilder(ActivityHome.this, R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog)
+                            .setMessage(message)
+                            .setPositiveButton("YA", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            }).show();
                 }
             }
         };
