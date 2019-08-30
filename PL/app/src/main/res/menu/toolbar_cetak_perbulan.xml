@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_cetak"
+        android:enabled="true"
+        android:title="CETAK DATA PERBULAN"
+        android:icon="@drawable/ic_print_24dp"
+        android:orderInCategory="10"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+</menu>

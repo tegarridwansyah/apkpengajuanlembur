@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home"/>
+        <item
+            android:id="@+id/nav_data_pegawai"
+            android:icon="@drawable/ic_person_blue"
+            android:title="@string/nav_data_pegawai"/>
+        <item
+            android:id="@+id/nav_data_divisi"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="@string/nav_data_divisi"/>
+        <item
+            android:id="@+id/nav_data_pm"
+            android:icon="@drawable/ic_laptop_windows_black_24dp"
+            android:title="@string/nav_data_pm"/>
+        <item
+            android:id="@+id/nav_form_pengajuan"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/nav_pengajuan_lembur"/>
+        <item
+            android:id="@+id/nav_list_pengajuan"
+            android:icon="@drawable/ic_format_list_numbered_black_24dp"
+            android:title="@string/nav_list_pengajuan_lembur"/>
+        <item
+            android:id="@+id/nav_laporan"
+            android:icon="@drawable/ic_insert_drive_file_black_24dp"
+            android:title="@string/nav_laporan"/>
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="@string/nav_keluar"/>
+        </menu>
+    </item>
+</menu>

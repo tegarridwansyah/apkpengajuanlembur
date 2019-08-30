@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_nama_pegawai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical|right"
+                android:text="Jung Eunbi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical|right"
+                android:text="Choi Yuna"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_hari"
+                app:layout_constraintTop_toBottomOf="@+id/list_pengajuan_nama_pegawai" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_id_pengajuan"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_nama_divisi"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_nama_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_hari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Selasa"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintTop_toBottomOf="@+id/list_pengajuan_nama_pegawai" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_nip"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_jam_mulai"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_jam_selesai"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_gaji"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal"
+                android:text="Yeu"
+                android:textColor="#00FF0000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/list_pengajuan_nama_pegawai"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/list_pengajuan_status"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="STATUS"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/list_pengajuan_tanggal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
