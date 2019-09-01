@@ -591,6 +591,8 @@ public class FragmentFormPengajuanLembur extends Fragment {
         etEstimasiJam.setText(null);
         etLeader.setText(null);
         etKeterangan.setText(null);
+        jamMulai = -1;
+        jamSelesai = -1;
     }
 
     private void getSelisihJam() {
