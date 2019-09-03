@@ -1,5 +1,7 @@
 package com.example.pl.activity;
 
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -23,6 +25,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.NotificationCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -140,6 +143,14 @@ public class ActivityHome extends AppCompatActivity {
                 } else if(intent.getAction().equals(Config.PUSH_NOTIFICATION)){
                     //new push notif is received
                     String message = intent.getStringExtra("message");
+
+                    NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+                    Notification notification = new NotificationCompat.Builder(getApplicationContext()).setContentTitle("Pemberitahuan")
+                            .setContentText(message).setContentTitle("Pemberitahuan").setSmallIcon(R.mipmap.ic_launcher).build();
+
+                    notification.flags |= Notification.FLAG_AUTO_CANCEL;
+                    notificationManager.notify(0, notification);
+
                     new MaterialAlertDialogBuilder(ActivityHome.this, R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog)
                             .setMessage(message)
                             .setPositiveButton("YA", new DialogInterface.OnClickListener() {
